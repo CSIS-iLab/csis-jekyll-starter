@@ -53,6 +53,7 @@ For more information on what is included and modifying the default configuration
 
 - [gulp](https://gulpjs.com/)
 - [Sass](http://sass-lang.com/)
+- [Stylelint](http://stylelint.io)
 - [Autoprefixer](https://github.com/postcss/autoprefixer)
 - [PostCSS](http://postcss.org/)
 - [Webpack](https://webpack.github.io/)

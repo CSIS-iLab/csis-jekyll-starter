@@ -1,29 +1,29 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
-*:before,
-*:after {
-    box-sizing: inherit;
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
-    background: $color__background-body;
-    /* Fallback for when there is no custom background color defined. */
-    --breakpoint: "xsmall";
+  /* Fallback for when there is no custom background color defined. */
+  --breakpoint: 'xsmall';
+  background: $color__background-body;
 
-    @include breakpoint("small") {
-        --breakpoint: "small";
-    }
+  @include breakpoint('small') {
+    --breakpoint: 'small';
+  }
 
-    @include breakpoint("medium") {
-        --breakpoint: "medium";
-    }
+  @include breakpoint('medium') {
+    --breakpoint: 'medium';
+  }
 
-    @include breakpoint("large") {
-        --breakpoint: "large";
-    }
+  @include breakpoint('large') {
+    --breakpoint: 'large';
+  }
 }
 
 

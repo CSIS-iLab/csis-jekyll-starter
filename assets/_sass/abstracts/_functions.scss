@@ -4,6 +4,6 @@
 
 $browser-context: 16px;
 @function calculate-rem($size) {
-    $remSize: $size / $browser-context;
-    @return #{$remSize}rem;
+  $rem-size: $size / $browser-context;
+  @return #{$rem-size}rem;
 }
