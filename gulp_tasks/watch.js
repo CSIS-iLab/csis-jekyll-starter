@@ -9,12 +9,6 @@ gulp.task('watch', function() {
     })
   }
 
-  // if (config.tasks.styleLint) {
-  //   watch(config.assets + '/' + config.sass.src + '/**/*', function() {
-  //     gulp.start('styleLint')
-  //   })
-  // }
-
   if (config.tasks.sass) {
     watch(config.assets + '/' + config.sass.src + '/**/*', function() {
       gulp.start('sass')
@@ -31,6 +25,7 @@ gulp.task('watch', function() {
         '*.html',
         './**/*.md',
         './**/*.markdown',
+        '*.json',
         config.jekyll.includes + '/**/*',
         config.jekyll.layouts + '/**/*',
         config.jekyll.posts + '/**/*',

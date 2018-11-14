@@ -10,12 +10,6 @@ gulp.task('sass', ['styleLint'], function() {
     .pipe(
       sass({ outputStyle: config.sass.outputStyle }).on('error', sass.logError)
     )
-    .pipe(
-      postcss([
-        autoprefixer({
-          browsers: config.sass.autoprefixer.browsers
-        })
-      ])
-    )
+    .pipe(postcss([autoprefixer(config.sass.autoprefixer)]))
     .pipe(gulp.dest(config.assets + '/' + config.sass.dest))
 })
