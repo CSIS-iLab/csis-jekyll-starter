@@ -1,3 +1,5 @@
+**This starter is no longer used or maintained, but is being left up for reference.**
+
 # CSIS Jekyll Starter Kit
 This is a Jekyll starter kit based on [Frasco](https://github.com/ixkaito/frasco/) that utilizes gulp, Sass, Autoprefixer, PostCSS, Webpack, imagemin, and Browsersync to speed-up development.
 
